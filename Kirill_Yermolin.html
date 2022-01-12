@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Api</title>
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            color: rgb(255, 255, 255)
+        }
+
+        body {
+            background-image: url(1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+
+        }
+
+        h1 {
+            color: rgb(153, 0, 0);
+            text-align: center;
+            padding: 20px;
+            font-size: 90px;
+        }
+
+        h2 {
+            margin: 10px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            margin-bottom: 0;
+
+        }
+
+        .listh3 {
+            font-size: 20px;
+            margin: 10px 20%;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        #description {
+            font-size: 30px;
+        }
+
+        .list {
+            background-color: rgba(0, 0, 0, 0.623);
+            border-radius: 10px;
+            margin: 10px 20%;
+            padding: 5px;
+        }
+
+        .list:hover {
+            background-color: rgba(9, 0, 59, 0.747);
+        }
+
+        .list ul {
+            text-align: center;
+            padding-right: 4%;
+        }
+
+        #infodiv {
+            background-color: rgba(0, 0, 0, 0.623);
+            border-radius: 10px;
+            margin: 0px 20%;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        #infodiv:hover {
+            background-color: rgba(9, 0, 59, 0.747);
+        }
+
+        button {
+            background: none;
+            color: white;
+            border: 3px solid;
+            padding: 1em 2em;
+            margin-top: 1em;
+            font-size: 1em;
+            font-weight: 700;
+            transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+        }
+
+        button:hover {
+            border-color: #ff3b3b;
+            color: #ff7d7d;
+            box-shadow: 0 0.5em 0.5em -0.4em #ff3b3b;
+            transform: translateY(-0.25em);
+            cursor: pointer;
+        }
+
+        img {
+            height: 300px;
+        }
+
+        #image {
+            background-color: rgba(0, 0, 0, 0.623);
+            margin: 10px 20%;
+            padding: 30px;
+
+        }
+
+        #image:hover {
+            background-color: rgba(9, 0, 59, 0.747);
+        }
+
+        #warning {
+            color: red;
+        }
+
+        footer div {
+            background-color: rgba(0, 0, 0, 0.623);
+            border-radius: 10px;
+            margin: 0px 20%;
+            padding: 10px;
+            font-size: 22px;
+        }
+
+        footer div:hover {
+            background-color: rgba(9, 0, 59, 0.747);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Marvel API</h1>
+    <section>
+
+        <div id="infodiv">
+            <h2 id="description">Information</h2>
+            <b>The Marvel Comics API allow to access different resource types: Comics, Comic Series, Comic Stories,
+                Comic Events, Creators and Characters. <br>
+                It provides the abillity for searching and filtering the data by different aspects.
+                All representations are encoded as JSON objects. <br>
+                The API can be used in a various ways and help or improve those using apps or websites about the Marvel
+                universe to access all the information easly. </b>
+            <div>
+                <a href="https://developer.marvel.com/documentation/generalinfo"><button>More</button></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="list">
+            <h3 class="listh3">Input (Character Example)</h4>
+                <ul>name:</ul>
+                <ul>comics:</ul>
+                <ul>series:</ul>
+        </div>
+
+
+        <div class="list">
+            <h3 class="listh3">Output (Character Example)</h4>
+                <ul>id:</ul>
+                <ul>name:</ul>
+                <ul>description:</ul>
+                <ul>modified:</ul>
+                <ul>resurceURI:</ul>
+                <ul>urls:</ul>
+                <ul>thumbnails:</ul>
+                <ul>comics:</ul>
+                <ul>stories:</ul>
+                <ul>events:</ul>
+                <ul>series:</ul>
+        </div>
+    </section>
+
+    <section>
+        <div id="image">
+            <a href="https://developer.marvel.com/account">
+                <img src="marvel.jpg" alt="">
+            </a>
+            <p>
+                <b id="warning"> Note: You must sign in to access the link!</b>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div> <b>
+                <pre>Kirill Yermolin                  ©2022 MARVEL                kirill.y123@gmail.com</pre>
+            </b></div>
+    </footer>
+</body>
+
+</html>
